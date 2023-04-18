@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <head>
+    <title>Signup 2</title>
+    <link rel="stylesheet" href="/registration/style.css" />
+  </head>
+  <body>
+    <div class="login-card">
+      <h2>Регистрация</h2>
+      <h3>Введите свои данные</h3>
+      <form class="login-form">
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="text"
+            placeholder="Ваше имя"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Пароль"
+          onkeyup="handleChange()"
+        />
+        <input
+          spellcheck="false"
+          class="control"
+          id="password2"
+          type="password"
+          placeholder="Подтвердите пароль"
+          onkeyup="handleChange()"
+        />
+        
+        <div class="number">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="text"
+            placeholder="Ваш номер"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        
+
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="text"
+            placeholder="Кто размещает?(застройщик, собственник и т.д)"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        
+
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+
+       
+
+        
+        <button class="control" type="button">Далее</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="/registration/main.js"></script>
+  </body>
+</html>
