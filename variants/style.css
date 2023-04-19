@@ -145,8 +145,79 @@ a {
     background-color: #fff;
     color: #0687FF;
 }
+.burger-close {
+    display: none;
+}
+
+
 
 @media (max-width: 768px) {
+    .invisibl {
+        display: none;
+    }
+    .burger-close {
+        display: none;
+    }
+    
+    .burger-open {
+        display: block;
+    }
+    
+    
+    
+    .burger-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 1rem
+    }
+    
+    
+    .burger-stick {
+        background-color: #fff;
+        height: 3px;
+        width: 2.3rem;
+        transition: transform .6s;
+    }
+    
+    .first-stick {
+        transform: rotate(-50deg);
+        position: absolute;
+    }
+    
+    .second-stick {
+        transform: rotate(50deg);
+        position: absolute;
+    }
+    
+    .burger-open {
+        display: flex;
+        flex-direction: column;
+        transition: display .5s;
+    }
+    
+    .burger-menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0687FF;
+        transition: display .5s;
+    }
+    
+    .burger-menu-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .burger-for-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1.4rem;;
+        margin-right: 1.4rem;
+    }
     .parent {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -157,3 +228,9 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.user-name {
+    display: flex;
+}
+
+

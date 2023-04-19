@@ -9,19 +9,32 @@
 </head>
 <body>
     <header class="primary-header">
-        <nav class="navbar container">
+        <nav class="navbar container burger-for-logo" class="nav">
+            <div class="burger-block burger-close" id="burgerBtn">
+                <div class="burger-stick" id="fJs"></div>
+                <div class="burger-stick" id="sJs"></div>
+            </div>
             <img src="/main/images/Mask Group.svg" alt="" class="logo">
-            <div class="header-btns-block">
+            <div class="header-btns-block invisibl">
               <a href="#" class="header-btn">Избранное</a>
               <a href="#" class="header-btn">Варианты</a>
               <a href="#" class="header-btn">Еще</a>
             </div>
-            <img src="/main/images/account_circle_FILL0_wght400_GRAD0_opsz48 (2) 1.svg" alt="" class="person-ico">
+            <img src="/main/images/account_circle_FILL0_wght400_GRAD0_opsz48 (2) 1.svg" alt="" class="person-ico invisibl">
         </nav>
+        <div class="burger-menu burger-close" id="burgerMenuJs">
+            <div class="burger-menu-btns">
+                <a href="#" class="header-btn">Избранное</a>
+                <a href="#" class="header-btn">Варианты</a>
+                <a href="#" class="header-btn">Еще</a>
+                <a href="" class="header-btn">Иван</a>
+            </div>
+        </div>
     </header>
     <div class="container">
         <div class="parent">
             <div class="child">
+
                 <img src="/main/images/test.jpeg" alt="" class="card-img">
                 <div class="price-block">
                     <h2 class="price">11 800 000 ₽</h2>
@@ -40,11 +53,12 @@
                     </div>
                 </div>
             </div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
-            <div class="child"></div>
+            
+            
+            
+            
         </div>
     </div>
+    <script src="/variants/main.js"></script>
 </body>
 </html>
