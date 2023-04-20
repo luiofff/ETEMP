@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 120rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.primary-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	transition: background-color 0.5s;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 7rem;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 7rem;
+	height: 7rem;
+}
+
+.header-btns-block {
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.6rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup {
+	color: #158FFF;
+	padding: 1.6rem;
+	background-color: #fff;
+	border-radius: 12rem;
+	transition: .5s;
+	border: 1px solid #fff;
+}
+
+.signup:hover {
+	border: 1px solid #fff;
+	background-color: #158FFF;
+	color: #fff;
+}
+
+.main-part-block {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(98.06deg, #158FFF 43.8%, #B0F0FF 129.45%);
+}
+
+.content {
+	display: none;
+	padding-top: 20rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-part {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+
+}
+
+.f-t {
+	font-size: 7rem;
+}
+
+.s-t {
+	font-size: 6rem;
+}
+
+
+.main-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 2.3rem;
+	background-color: #fff;
+	border-radius: 25rem;
+	color: #158FFF;
+	transition: .5s;
+	border: 1px solid #fff;
+	width: 50%;
+	margin-top: 12rem;
+}
+
+.main-btn:hover {
+	background-color: #158FFF;
+	color: #fff;
+}
+
+
+.refresh-logo {
+	height: 47rem;
+}
+
+.second-part-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #e7eaef;
+}
+
+.second-text-part {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.aboutUstext {
+	font-size: 1.8rem;
+	color: #158FFF;
+}
+
+.how-it-work-block {
+	font-size: 7rem;
+	color: #158FFF;
+	margin-bottom: 2rem;
+}
+
+.end-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: #158FFF;
+	padding: 1rem;
+	border-radius: 20rem;
+	border: 2px solid #158FFF;
+	transition: .5s;
+}
+
+.end-text:hover {
+	background-color: #158FFF;
+	color: #fff;
+}
+
+/* scroll logic */
+header.active {
+	background-color: #158FFF;
+}
+
+div.invisible {
+	transition: opacity 0.35s;
+}
+.invisible {
+	opacity: 0;
+}
+
+@media screen and (max-width:1300px) {
+
+	.main-btn {
+		
+		margin-top: 2rem;
+	}
+	.f-t {
+		font-size: 5rem;
+	}
+	
+	.s-t {
+		font-size: 4rem;
+	}
+
+	.refresh-logo {
+		height: 31rem;
+	}
+
+	/* .second-part-block */
+	@media screen and (max-width:530px) {
+		.how-it-work-block {
+			font-size: 4.5rem;
+		}
+	}
+	.aboutUstext {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width:554px) {
+	.second-text-part {
+		gap: 1rem;
+	}
+	.how-it-work-block {
+		font-size: 2rem;
+	}
+	.end-text {
+		font-size: 1.3rem;
+	}
+}
+
+
+
+
+@media screen and (max-width:932px)  {
+	.refresh-logo {
+		display: none;
+	}
+	.f-page-cont-for-js {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.text-part {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-btn {
+		width: auto;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		height: 10rem;
+	}
+	.how-it-work-block {
+		font-size: 5.5rem;
+	}
+}
+
+/* text adapt */
+@media screen and (max-width:700px) {
+	.f-t {
+		font-size: 5rem;
+	}
+	
+	.s-t {
+		font-size: 4rem;
+	}
+
+	@media screen and (max-width:515px) {
+		.f-t {
+			font-size: 4rem;
+		}
+		
+		.s-t {
+			font-size: 3rem;
+		}
+	}
+} 
+
+/* very small devices */
+
+@media screen and (max-width:320px) {
+	.f-t {
+		font-size: 2rem;
+	}
+	
+	.s-t {
+		font-size: 2rem;
+	}
+
+	.second-text-part {
+		gap: .5rem;
+	}
+	.how-it-work-block {
+		font-size: 1rem;
+	}
+	.end-text {
+		font-size: 1.3rem;
+	}
+	.aboutUstext {
+		font-size: .9rem;
+	}
+}
