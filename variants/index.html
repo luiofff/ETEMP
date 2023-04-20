@@ -16,9 +16,9 @@
             </div>
             <img src="/main/images/Mask Group.svg" alt="" class="logo">
             <div class="header-btns-block invisibl">
-              <a href="#" class="header-btn">Избранное</a>
-              <a href="#" class="header-btn">Варианты</a>
-              <a href="#" class="header-btn">Еще</a>
+              <a href="#" class="header-btn" id="favorite">Избранное</a>
+              <a href="#" class="header-btn" id="variants">Варианты</a>
+              <a href="#" class="header-btn" id="more">Еще</a>
             </div>
             <img src="/main/images/account_circle_FILL0_wght400_GRAD0_opsz48 (2) 1.svg" alt="" class="person-ico invisibl">
         </nav>
@@ -31,14 +31,15 @@
             </div>
         </div>
     </header>
-    <div class="container">
+
+    <!-- variants -->
+    <div class="container" id="variantsContents">
         <div class="parent">
             <div class="child">
 
                 <img src="/main/images/test.jpeg" alt="" class="card-img">
                 <div class="price-block">
                     <h2 class="price">11 800 000 ₽</h2>
-                    <img src="/main/images/Group 12.svg" alt="" class="fav-ico">
                 </div>
                 <div class="name-card">
                     2-комн. квартира, 51,3 м²
@@ -48,17 +49,17 @@
                 </div>
 
                 <div class="btn-block">
-                    <div class="add-btn">
+                    <button class="add-btn">
                         Добавить
-                    </div>
+                    </button>
                 </div>
             </div>
-            
-            
-            
-            
         </div>
     </div>
+
+    
+
+    
     <script src="/variants/main.js"></script>
 </body>
 </html>
