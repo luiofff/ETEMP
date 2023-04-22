@@ -1,62 +1,24 @@
-const bars = document.querySelector("#bars"),
-  strengthDiv = document.querySelector("#strength"),
-  passwordInput = document.querySelector("#password");
+const DropDownOpen = () => {
+  const dropMenu = document.querySelector(".drop-variants");
+  dropMenu.classList.toggle("drop-menu-open");
+}
 
-const strength = {
-  1: "weak",
-  2: "medium",
-  3: "strong",
-};
+dropMenuBtn.addEventListener("click", DropDownOpen)
 
-const getIndicator = (password, strengthValue) => {
-  for (let index = 0; index < password.length; index++) {
-    let char = password.charCodeAt(index);
-    if (!strengthValue.upper && char >= 65 && char <= 90) {
-      strengthValue.upper = true;
-    } else if (!strengthValue.numbers && char >= 48 && char <= 57) {
-      strengthValue.numbers = true;
-    } else if (!strengthValue.lower && char >= 97 && char <= 122) {
-      strengthValue.lower = true;
-    }
-  }
+function show(value) {
+  document.querySelector(".dropdownmain").value = value;
+}
 
-  let strengthIndicator = 0;
+const ConfirmFunc = () => {
+  const confirm = document.querySelector(".confirmation-scenario")
+  confirm.classList.toggle("confirm-open")
+}
 
-  for (let metric in strengthValue) {
-    if (strengthValue[metric] === true) {
-      strengthIndicator++;
-    }
-  }
+confBtnJS.addEventListener("click", ConfirmFunc)
 
-  return strength[strengthIndicator] ?? "";
-};
+const ConfirmClose = () => {
+  const confirm = document.querySelector(".confirmation-scenario")
+  confirm.classList.remove("confirm-open")
+}
 
-const getStrength = (password) => {
-  let strengthValue = {
-    upper: false,
-    numbers: false,
-    lower: false,
-  };
-
-  return getIndicator(password, strengthValue);
-};
-
-const handleChange = () => {
-  let { value: password } = passwordInput;
-
-  console.log(password);
-
-  const strengthText = getStrength(password);
-
-  bars.classList = "";
-
-  if (strengthText) {
-    strengthDiv.innerText = `${strengthText} Password`;
-    bars.classList.add(strengthText);
-  } else {
-    strengthDiv.innerText = "";
-  }
-};
-
-
-
+confBack.addEventListener("click", ConfirmClose)

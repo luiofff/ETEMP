@@ -153,7 +153,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 110vh;
     width: 100%;
 }
 
@@ -290,6 +290,9 @@ a {
 }
 
 @media (max-width: 860px) {
+    .second-content {
+        height: 200vh;
+    }
     .second-content-block {
         flex-direction: column;
     }
@@ -319,6 +322,12 @@ a {
                 .test-img-b {
                     width: auto;
                     height: auto;
+                }
+
+                @media (max-width: 380px) {
+                    .second-content {
+                        height: 250vh;
+                    }
                 }
             }
         }
