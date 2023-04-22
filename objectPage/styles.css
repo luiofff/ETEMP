@@ -1,0 +1,375 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+header.active {
+	background-color: #158FFF;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 120rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.primary-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	transition: background-color 0.5s;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 7rem;
+	justify-content: space-between;
+    background-color: #158FFF;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.logo {
+	width: 7rem;
+	height: 7rem;
+}
+
+.header-btns-block {
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.6rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.content-contaner {
+    margin-top: 15rem;
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-img-block {
+    width: 100%;
+    height: 100vh;
+}
+
+.back-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.background-tint {
+    z-index: 998;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26, 23, 23, 0.5);
+    background-blend-mode: multiply;
+}
+
+.name-of-object {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 35rem;
+}
+
+.main-price {
+    font-size: 4rem;
+    font-weight: w300;
+}
+
+.main-text {
+    font-size: 6rem;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.main-add-btn {
+    padding: 2rem;
+    background-color: #158FFF;
+    border-radius: 4rem;
+    border:2px solid #158FFF;
+    transition: .5s;
+}
+
+.main-watch-btn {
+    padding: 2rem;
+    border-radius: 4rem;
+    border:2px solid #fff;
+    transition: .5s;
+}
+.main-watch-btn:hover {
+    opacity: 1;
+    animation: ani .8s forwards;
+}
+@keyframes ani {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+.main-add-btn:hover {
+    background-color: transparent;
+}
+
+/* second-part */
+
+.second-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.second-content-block {
+    padding-top: 15rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.name-and-photo-part {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.test-img-b {
+    width: 60rem;
+    height: 30rem;
+}
+
+.object {
+    color: #111;
+    font-size: 4.3rem;
+}
+
+.addres {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #111;
+}
+
+.price-and-call {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.price-in-description {
+    color: #111;
+    font-size: 3rem;
+}
+
+.call-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 1.7rem;
+    background-color: #158FFF;
+    border: 1px solid #158FFF;
+    border-radius: 5REM;
+    transition: .5s;
+}
+
+.call-btn:hover {
+    background-color: transparent;
+    color: #158FFF;
+}
+
+.second-add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 1.7rem;
+    background-color: transparent;
+    border: 1px solid #158FFF;
+    border-radius: 5REM;
+    transition: .5s;
+    color: #158FFF;
+}
+
+.second-add-btn:hover {
+    color: #fff;
+    background-color: #158FFF;
+}
+
+.description-btn {
+    padding: 1rem;
+    background-color: #158FFF;
+}
+
+@media (max-width: 860px) {
+    .second-content-block {
+        flex-direction: column;
+    }
+
+    @media (max-width: 630px) {
+        .test-img-b {
+            width: 50rem;
+            height: 20rem;
+        }
+        .object {
+            font-size: 3.8rem;
+        }
+        
+        .addres {
+            font-size: .9rem;
+        }
+        @media (max-width: 520px) {
+            .test-img-b {
+                width: 40rem;
+                height: 20rem;
+            }
+
+            .object {
+                font-size: 3rem;
+            }
+            @media (max-width: 436px) {
+                .test-img-b {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    } 
+}
+
+/* burger */
+
+.burger-close {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .name-of-object {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 25rem;
+    }
+    
+    .main-price {
+        font-size: 2rem;
+        font-weight: w300;
+    }
+    
+    .main-text {
+        font-size: 4rem;
+    }
+    .invisibl {
+        display: none;
+    }
+    .burger-close {
+        display: none;
+    }
+    
+    .burger-open {
+        display: block;
+        animation: showBlock .5s linear forwards;
+    }
+    
+    @keyframes showBlock {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    
+    
+    .burger-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 1rem
+    }
+    
+    
+    .burger-stick {
+        background-color: #fff;
+        height: 3px;
+        width: 2.3rem;
+        transition: transform .6s;
+    }
+    
+    .first-stick {
+        transform: rotate(-50deg);
+        position: absolute;
+    }
+    
+    .second-stick {
+        transform: rotate(50deg);
+        position: absolute;
+    }
+    
+    .burger-open {
+        display: flex;
+        flex-direction: column;
+        transition: display .5s;
+    }
+    
+    .burger-menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0687FF;
+        transition: display .5s;
+    }
+    
+    .burger-menu-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .burger-for-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1.4rem;;
+        margin-right: 1.4rem;
+    }
+}
+

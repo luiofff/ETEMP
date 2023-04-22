@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/variants/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/objectPage/styles.css">
 </head>
 <body>
     <header class="primary-header">
@@ -32,35 +32,36 @@
         </div>
     </header>
 
-    <!-- variants -->
-    <div class="container" id="variantsContents">
-        <div class="parent">
-            <a href="/objectPage/index.html">
-                <div class="child">
-                    <img src="/main/images/test.jpeg" alt="" class="card-img">
-                    <div class="price-block">
-                        <h2 class="price">11 800 000 ₽</h2>
-                    </div>
-                    <div class="name-card">
-                        2-комн. квартира, 51,3 м²
-                    </div>
-                    <div class="city-card">
-                        Санкт-Петербург, р-н Невский, Рыбацкое, Усть-Славянка территория, ул. Славянская, 8
-                    </div>
-    
-                    <div class="btn-block">
-                        <button class="add-btn">
-                            Удалить
-                        </button>
+    <div class="content">
+        <div class="main-img-block">
+            <img src="/main/images/1.jpg" alt="" class="back-img">
+            <div class="background-tint">
+                <div class="container name-of-object">
+                    <h1 class="main-text">ЖК «Полис Приморский 2»</h1>
+                    <h2 class="main-price">11 800 000 ₽</h2>
+                    <div class="main-buttons">
+                        <div class="main-add-btn">Добавить</div>
+                        <a href="#information-block"><div class="main-watch-btn">Смотреть</div></a>
                     </div>
                 </div>
-            </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="second-content" id="information-block">
+        <div class="container second-content-block">
+            <div class="name-and-photo-part">
+                <h1 class="object">ЖК «Полис Приморский 2»</h1>
+                <h2 class="addres">Санкт-Петербург, р-н Невский, Рыбацкое, Усть-Славянка территория, ул. Славянская, 8</h2>
+                <img src="/main/images/1.jpg" alt="" class="test-img-b">
+            </div>
+            <div class="price-and-call">
+                <div class="price-in-description">11 800 000 ₽</div>
+                <div class="call-btn">Позвонить</div>
+                <button class="second-add-btn">Добавить</button>
+            </div>
         </div>
     </div>
-
-    
-
-    
-    <script src="/variants/main.js"></script>
 </body>
+<script src="/objectPage/main.js"></script>
 </html>
