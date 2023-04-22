@@ -13,9 +13,16 @@ body {
 	color: #fff;
 }
 
-header.active {
+.for-backgroundcolor-logic {
+    width: 100%;
+
+	transition: background-color 0.5s;
+}
+
+.for-backgroundcolor-logic.active {
 	background-color: #158FFF;
 }
+
 
 
 a {
@@ -34,7 +41,6 @@ a {
 	left: 0;
 	z-index: 999;
 	width: 100%;
-	transition: background-color 0.5s;
 }
 
 .navbar {
@@ -65,7 +71,6 @@ a {
 
 .content-contaner {
     margin-top: 15rem;
-    background-color: red;
     width: 100%;
     height: 100vh;
 }
@@ -145,10 +150,25 @@ a {
 
 .second-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    height: auto;
     width: 100%;
+}
+
+.description {
+    color: #111;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.description-text {
+    color: #111;
+    font-size: 3rem;
 }
 
 .second-content-block {
@@ -233,6 +253,40 @@ a {
 .description-btn {
     padding: 1rem;
     background-color: #158FFF;
+}
+
+.second-navbar {
+    display: flex;
+    gap: 3rem;
+}
+
+.second-btns-nav{
+    display: flex;
+    justify-content: center;
+    align-items: centerx;
+    padding: 2rem;
+    background-color: #111;
+    opacity: .7;
+    border-radius: 10rem;
+    border: 3px solid #158FFF;
+}
+
+.second-btns-nav {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.additional-block {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    transition: opacity .5s;
+}
+
+
+.secondJs {
+    opacity: 1;
 }
 
 @media (max-width: 860px) {
