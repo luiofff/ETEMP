@@ -104,6 +104,8 @@ a {
 }
 
 .main-price {
+    display: flex;
+    gap:1rem;
     font-size: 4rem;
     font-weight: w300;
 }
