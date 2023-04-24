@@ -1,1 +1,113 @@
-l
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/addObject/style.css">
+</head>
+<body>
+    <header class="primary-header">
+        <div class="for-backgroundcolor-logic">
+            <nav class="navbar container burger-for-logo" class="nav">
+                <div class="burger-block burger-close" id="burgerBtn">
+                    <div class="burger-stick" id="fJs"></div>
+                    <div class="burger-stick" id="sJs"></div>
+                </div>
+                <img src="/main/images/Mask Group.svg" alt="" class="logo">
+                <div class="header-btns-block invisibl">
+                  <a href="/favorits/index.html" class="header-btn" id="favorite">Избранное</a>
+                  <a href="/variants/index.html" class="header-btn" id="variants">Варианты</a>
+                  <a href="/more/index.html" class="header-btn" id="more">Еще</a>
+                </div>
+                <a href="/profile/index.html"><img src="/main/images/account_circle_FILL0_wght400_GRAD0_opsz48 (2) 1.svg" alt="" class="person-ico invisibl"></a>
+            </nav>
+            <div class="burger-menu burger-close" id="burgerMenuJs">
+                <div class="burger-menu-btns">
+                    <a href="/favorits/index.html" class="header-btn">Избранное</a>
+                    <a href="/variants/index.html" class="header-btn">Варианты</a>
+                    <a href="/more/index.html" class="header-btn">Еще</a>
+                    <a href="/profile/index.html" class="header-btn">Иван</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container content-block">
+            <h1 class="main-text">Добавление объекта</h1>
+            <div class="form-block">
+                <form action="">
+                    <div class="input-block">
+                        <label for="" class="label-text">Назавание объекта</label>
+                        <input 
+                            type="text" 
+                            class="input"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-block">
+                        <label for="" class="label-text">Адресс</label>
+                        <input 
+                            type="text" 
+                            class="input"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="input-block">
+                        <label for="" class="label-text">Цена</label>
+                        <input 
+                            type="text" 
+                            class="input"
+                            required
+                        >
+                    </div>
+
+                    <div class="numbers-data">
+                        <div class="input-block-data">
+                            <input 
+                                type="number" 
+                                class="input-numbers"
+                                placeholder="Размер"
+                                required
+                            >
+                            <div class="label-data-input">м²</div>
+                        </div>
+    
+                        <div class="input-block-data floors">
+                            <input 
+                                type="number" 
+                                class="input-numbers"
+                                placeholder="Этаж"
+                                required
+                            >
+                            <div class="label-data-input">из</div>
+                            <input 
+                                type="number" 
+                                class="input-numbers"
+                                placeholder="Эт. в доме"
+                                required
+                            >
+                        </div>
+
+                        <div class="input-block-data year">
+                            <input 
+                                type="number" 
+                                class="input-numbers"
+                                placeholder="Год постройки"
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="btn-block">
+                        <button type="submit" class="add-btn">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

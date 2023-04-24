@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.4rem;
+	color: #262626;
+    background-color: #E7EAEF;
+}
+
+.for-backgroundcolor-logic {
+    width: 100%;
+
+	transition: background-color 0.5s;
+}
+
+.for-backgroundcolor-logic.active {
+	background-color: #158FFF;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 120rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.primary-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 7rem;
+	justify-content: space-between;
+    background-color: #158FFF;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.logo {
+	width: 7rem;
+	height: 7rem;
+}
+
+.header-btns-block {
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.6rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+/* burger */
+
+.burger-close {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .name-of-object {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 25rem;
+    }
+    
+    .main-price {
+        font-size: 2rem;
+        font-weight: w300;
+    }
+    
+    .main-text {
+        font-size: 4rem;
+    }
+    .invisibl {
+        display: none;
+    }
+    .burger-close {
+        display: none;
+    }
+    
+    .burger-open {
+        display: block;
+        animation: showBlock .5s linear forwards;
+    }
+    
+    @keyframes showBlock {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    
+    
+    .burger-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 1rem
+    }
+    
+    
+    .burger-stick {
+        background-color: #fff;
+        height: 3px;
+        width: 2.3rem;
+        transition: transform .6s;
+    }
+    
+    .first-stick {
+        transform: rotate(-50deg);
+        position: absolute;
+    }
+    
+    .second-stick {
+        transform: rotate(50deg);
+        position: absolute;
+    }
+    
+    .burger-open {
+        display: flex;
+        flex-direction: column;
+        transition: display .5s;
+    }
+    
+    .burger-menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0687FF;
+        transition: display .5s;
+    }
+    
+    .burger-menu-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .burger-for-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1.4rem;;
+        margin-right: 1.4rem;
+    }
+}
+
+.main-content {
+    margin-top: 15rem;
+}
+
+.main-text {
+    font-size: 4rem;
+    font-weight: 550;
+}
+
+.form-block {
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    background-color: #fff;
+    padding: 1.6rem;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.label-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.input-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    padding: .6rem;
+    width: 100%;
+    font-size: 1.7rem;
+    border: 0;
+    color: #323232;
+    border-bottom: 1px solid #b4b4b4;
+    outline: 0;
+    font-weight: bold;  
+    transition: border-bottom .5s;
+}
+
+.input:focus {
+    border-bottom: 1px solid #158FFF;
+}
+
+.numbers-data {
+    flex-wrap: wrap;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.floors {
+    display: flex;
+    gap: .6rem;
+}
+
+.input-numbers {
+    width: 13rem;
+    padding: 1rem;
+    outline: 0;
+    font-weight: bold;  
+    transition: border .5s;
+    border: 2px solid #a4a4a4;
+    border-radius: 1rem;
+}
+
+.input-numbers:focus {
+    border: 2px solid #158FFF;
+}
+
+.input-block-data {
+    display: flex;
+    align-items: center;
+}
+
+.label-data-input {
+    padding: .3rem;
+    font-size: 1.8rem;
+}
+
+.btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn {
+    padding: 1.9rem;
+    background-color: #158FFF;
+    border: 1px solid #158FFF;
+    border-radius: 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+}
+
+.add-btn:hover {
+    color: #158FFF;
+    background-color: transparent;
+}
