@@ -291,6 +291,17 @@ a {
     opacity: 1;
 }
 
+.des-block {
+    color: #000;
+    display: flex;
+    gap: .6rem;
+}
+
+.text {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
 @media (max-width: 860px) {
     .second-content {
         height: 200vh;
