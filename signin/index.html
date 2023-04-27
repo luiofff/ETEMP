@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/signin/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="login-window">
+        <div class="first-text-block">
+            <h1>Войти</h1>
+            <h4 class="data-text">Введите ваши данные</h4>
+        </div>
+        <form class="second-block">
+            <div class="input-block">
+                <input 
+                    type="email"
+                    placeholder="Email"
+                    class="inputJS"
+                    required
+                >
+            </div>
+            <div class="input-block pass">
+                <input
+                    class="inputJS" 
+                    type="password"
+                    placeholder="Пароль"
+                    id="passwordJs"
+                    required
+                >
+                <div class="visibility-block">
+                    <span class="material-symbols-outlined" id="showBtnJs">
+                        visibility
+                    </span> 
+                </div> 
+            </div>
+            
+            
+        </form>
+        <div class="third-block">
+
+            <button class="btn">
+                Войти
+            </button>
+        </div>
+    </div>
+</body>
+<script src="/signin/main.js"></script>
+</html>

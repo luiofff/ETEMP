@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.4rem;
+	color: #111;
+    background-color: #158FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 120rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.login-window {
+    padding: 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.3rem;
+    background-color: #fff;
+    width: 45vh;
+    height: 55vh;
+    border-radius: 2rem;
+}
+
+.first-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+}
+
+.data-text {
+    color: rgba(79, 79, 79, 0.933);
+    font-weight: lighter;
+}
+
+.second-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+}
+
+input {
+    padding: 1rem;
+    border: none;
+    width: 70%;
+    outline: none;
+    font-size: 1.7rem;
+    color: #158FFF;
+}
+
+.input-block {
+    width: 80%;
+    font-size: 1.7rem;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgba(79, 79, 79, 0.933);
+    outline: 0;  
+    transition: border .5s;
+}
+
+.input-block:hover{
+    border-bottom: 2px solid #158FFF;
+}
+
+
+.password-block {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.visibility-block {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#showBtnJs {
+    color: rgba(79, 79, 79, 0.933);
+}
+
+
+.third-block {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 2rem;
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #158FFF;
+    border-radius: 2rem;
+    color: #fff;
+    outline: 2px solid #158FFF;
+    border: none;
+    transition:.5s;
+}
+
+.btn:is(:hover, :focus) {
+    background-color: #fff;
+    color: #158FFF;
+    outline-offset: .4rem;
+}
+
