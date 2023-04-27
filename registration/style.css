@@ -11,8 +11,11 @@ body {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 1.4rem;
 	color: #111;
-  height: 100%;
+  height: 100vh;
   background-color: #0687FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
 	text-decoration: none;
@@ -24,14 +27,6 @@ a {
 	padding-inline: 1.5rem;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
 
 .login-card {
   padding: 3rem;
