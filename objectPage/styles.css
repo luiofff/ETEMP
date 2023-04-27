@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 1.4rem;
 	color: #fff;
 }
@@ -59,7 +59,7 @@ a {
 }
 
 .header-btns-block {
-	font-weight: bold;
+	font-weight: 500;
 	color: #fff;
 	font-size: 1.6rem;
 	display: flex;
@@ -107,7 +107,7 @@ a {
     display: flex;
     gap:1rem;
     font-size: 4rem;
-    font-weight: w300;
+    font-weight: 300;
 }
 
 .main-text {
@@ -118,7 +118,7 @@ a {
     display: flex;
     gap: 3.5rem;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .main-add-btn {
