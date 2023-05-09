@@ -3,7 +3,10 @@ const closeDropDown = () => {
   dropMenu.classList.remove("drop-menu-open");
 }
 
-document.addEventListener("click", closeDropDown)
+if (document.querySelector(".drop-variants").classList.contains("drop-menu-open") === true) {
+  document.addEventListener("click", closeDropDown)
+}
+
 
 
 const DropDownOpen = () => {
