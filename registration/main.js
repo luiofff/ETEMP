@@ -1,3 +1,11 @@
+const closeDropDown = () => {
+  const dropMenu = document.querySelector(".drop-variants");
+  dropMenu.classList.remove("drop-menu-open");
+}
+
+document.addEventListener("click", closeDropDown)
+
+
 const DropDownOpen = () => {
   const dropMenu = document.querySelector(".drop-variants");
   dropMenu.classList.toggle("drop-menu-open");
@@ -15,10 +23,3 @@ const ConfirmFunc = () => {
 }
 
 confBtnJS.addEventListener("click", ConfirmFunc)
-
-const ConfirmClose = () => {
-  const confirm = document.querySelector(".confirmation-scenario")
-  confirm.classList.remove("confirm-open")
-}
-
-confBack.addEventListener("click", ConfirmClose)
