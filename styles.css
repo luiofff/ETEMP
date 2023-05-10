@@ -126,6 +126,7 @@ a {
 }
 
 .second-part-block {
+	padding-top: 19rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,7 +138,7 @@ a {
 .second-text-part {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .aboutUstext {
@@ -255,11 +256,11 @@ div.invisible {
 /* text adapt */
 @media screen and (max-width:700px) {
 	.f-t {
-		font-size: 5rem;
+		font-size: rem;
 	}
 	
 	.s-t {
-		font-size: 4rem;
+		font-size: 3.7rem;
 	}
 
 	@media screen and (max-width:515px) {
@@ -276,6 +277,9 @@ div.invisible {
 /* very small devices */
 
 @media screen and (max-width:320px) {
+	.second-part-block {
+		padding-top: 0;
+	}
 	.f-t {
 		font-size: 2rem;
 	}
