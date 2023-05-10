@@ -1,0 +1,249 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 120rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.primary-header {
+    position: fixed;
+    top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.btns_nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn {
+    height: 6rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.btn_reg {
+    background-color: #fff;
+    color: #158FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+.btn_reg:is(:hover, :focus, :active) {
+    background-color: #158FFF;
+    color: #FFF;
+}
+
+.btn_enter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+
+.btn_enter:is(:hover, :focus, :active) {
+    border: 1px solid #fff;
+}
+
+.btn_trade {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 4rem;
+    outline: 1px solid #fff;
+    transition: .5s;
+}
+
+.btn_trade:is(:hover, :focus, :active) {
+    outline-offset: 3px;
+    background-color: #FFF;
+    color: #158FFF;
+}
+
+.array_down {
+    display: none;
+}
+
+.burger_menu {
+    display: none;
+}
+
+
+@media screen and (max-width:630px) {
+    .btns_nav {
+        display: none;
+    }
+    .array_down {
+        display: block;
+        transition: rotate .5s;
+    }
+
+    
+    .array_down_active {
+        rotate: 180deg;
+    }
+
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 998;
+        background-color: #158FFF;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateY(-90vh);
+        transition: transform .5s;
+    }
+    
+    .burger_menu_active{
+        transform: translateY(0);
+    }
+
+    .burger_content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    
+}
+
+
+.main_content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5.2rem;
+    background: linear-gradient(98.06deg, #158FFF 43.8%, #B0F0FF 129.45%)
+}
+
+.text_block {
+    font-size: 3rem;
+}
+
+
+
+.m_text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.refresh {
+    width: 28rem;
+    height: 28rem;
+    animation-name: move;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.refresh:is(:hover, :focus, :active) {
+    animation-name: move_focus;
+	animation-duration: .2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes move_focus {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:630px) {
+    .text_block {
+        font-size: 2rem;
+    }
+
+    .refresh {
+        width: 23rem;
+        height: 23rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .text_block {
+        font-size: 1.7rem;
+    }
+
+    .refresh {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .text_block {
+        font-size: 1.4rem;
+    }
+    .refresh {
+        width: 18rem;
+        height: 18rem;
+    }
+}
