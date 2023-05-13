@@ -1,8 +1,6 @@
-const isScrolling = () => {
-  const headerEl = document.querySelector('.primary-header')
-  const content = document.querySelector('.f-page-cont-for-js')
-  let windowPosition = window.scrollY > 350
-  headerEl.classList.toggle('active', windowPosition)
-  content.classList.toggle('invisible', windowPosition)
+const openBurger = () => {
+  document.querySelector(".array_down").classList.toggle("array_down_active");
+  document.querySelector(".burger_menu").classList.toggle("burger_menu_active");
 }
-window.addEventListener('scroll', isScrolling)
+
+document.querySelector(".array_down").addEventListener("click", openBurger);
