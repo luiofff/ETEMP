@@ -1,28 +1,18 @@
-const closeDropDown = () => {
-  const dropMenu = document.querySelector(".drop-variants");
-  dropMenu.classList.remove("drop-menu-open");
-}
-
-if (document.querySelector(".drop-variants").classList.contains("drop-menu-open") === true) {
-  document.addEventListener("click", closeDropDown)
-}
-
-
-
-const DropDownOpen = () => {
-  const dropMenu = document.querySelector(".drop-variants");
-  dropMenu.classList.toggle("drop-menu-open");
-}
-
-dropMenuBtn.addEventListener("click", DropDownOpen)
-
 function show(value) {
-  document.querySelector(".dropdownmain").value = value;
+  dropText.innerHTML = value;
+  dropText.classList.add("dropdown_text_active");
+  document.querySelector(".bottom_line_dropdown").classList.remove("bottom_line_dropdown_active");
+  document.querySelector(".material-symbols-outlined").classList.remove("material-symbols-outlined_active");
 }
 
-const ConfirmFunc = () => {
-  const confirm = document.querySelector(".confirmation-scenario")
-  confirm.classList.toggle("confirm-open")
+
+
+
+const dropdownActive = () => {
+  document.querySelector(".material-symbols-outlined").classList.toggle("material-symbols-outlined_active");
+  document.querySelector(".bottom_line_dropdown").classList.toggle("bottom_line_dropdown_active");
 }
 
-confBtnJS.addEventListener("click", ConfirmFunc)
+document.querySelector(".input_field_dropdown").addEventListener("click", dropdownActive);
+
+
